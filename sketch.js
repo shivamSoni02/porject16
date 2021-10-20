@@ -60,17 +60,8 @@ function draw() {
     if(fruitGroup.isTouching(knife)){
       fruitGroup.destroyEach();
       
-      // knifeSwooshSound.play();
-      // knifeSwooshSound.play;
-      // knifeSwooshSound();
-      // knifeSwooshSoundplay();
-
-
-      // score=score;
-      // score=+2;
-      // score=2;
-      // score=score+2;
-
+      knifeSwooshSound.play();
+       score=score+2;
     }
     else
     {
@@ -89,7 +80,7 @@ function draw() {
         knife.addImage(gameOverImage);
         knife.scale=2;
         knife.x=300;
-        knife.y=150;
+        knife.y=300;
       }
     }
   }
@@ -119,10 +110,7 @@ function fruits(){
     fruit.x = 200   
   //Increase the velocity of fruit after score 4 
 
-      // fruit.velocityX= (7+(score/4));
-      // fruit.velocityY= (7+(score));
-      // fruit.velocity= (7+(score/4));
-      // fruit.velocityX= (7);
+       fruit.velocityX= (7+(score/4));
      
     fruit.scale=0.2;
      //fruit.debug=true;
